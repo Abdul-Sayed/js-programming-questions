@@ -640,3 +640,55 @@ function repeatedString(s, n) {
 
 console.log(repeatedString('abc', 100))
 */
+
+// -------------------------------------------------
+// Find the number that occurs only once in the array
+/*
+function findUniqueInteger(integersArray) {
+  let countsObj = {};
+  for (const number of integersArray) {
+    countsObj[number] = (countsObj[number] || 0) + 1;
+  }
+  console.log(countsObj)
+  for (const number in countsObj) {
+    if (countsObj[number] === 1) {
+      return number
+    }
+  }
+}
+*/
+
+// --------------------------------------------------------
+// Determine if the inputString can be composed using the letters contained in each element of the given stringArray
+//  @param stringArray: string []
+//  @param inputString: string
+
+/*
+function canMakeRansomNote(stringArray, inputString) {
+  inputString = inputString.replace(" ", "")
+  let allChars = "";
+
+  for (const string of stringArray) {
+    allChars += string
+  }
+
+  allChars = allChars.split('').sort().join('');
+
+  for (const letter of inputString) {
+    if (allChars.includes(letter)) {
+      allChars = allChars.replace(letter, "");
+    } else {
+      return false;
+    }
+  }
+
+  return true;
+
+}
+
+
+const stringArray = ['A', 'b', 'c', 'a', 'd', 'boy', 'cat', 'kitten', 'pools', 'brioche'];
+const inputString = 'baaaad taco'
+
+console.log(canMakeRansomNote(stringArray, inputString))  // false
+*/
