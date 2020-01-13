@@ -692,3 +692,21 @@ const inputString = 'baaaad taco'
 
 console.log(canMakeRansomNote(stringArray, inputString))  // false
 */
+
+// ---------------------------------------
+// Find unique integer in an array
+
+/*
+function findUniqueInteger(integersArray) {
+  let countsObj = {};
+  for (const number of integersArray) {
+    countsObj[number] = (countsObj[number] || 0) + 1;
+  }
+  console.log(countsObj)
+  for (const number in countsObj) {
+    if (countsObj[number] === 1) {
+      return number
+    }
+  }
+}
+*/
