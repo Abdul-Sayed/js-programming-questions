@@ -100,7 +100,7 @@ function rearrangeSizes(T) {
 */
 
 // ---------------------------------------------------------
-// Make a general case isPalindrome ? function
+// Make a general case canBePalindrome(word) ? function
 
 // aabb => abba => true
 // asdf => false
@@ -109,7 +109,7 @@ function rearrangeSizes(T) {
 // aaabb => baaab => true
 
 /*
-function canBePalindrome(str) {
+function canBePalindrome(word) {
     const charCount = {}
     for (let i = 0; i < str.length; i++) {
         if (charCount[str[i]]) {
